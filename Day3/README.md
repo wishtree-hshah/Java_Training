@@ -1,6 +1,3 @@
-**Externalizable:**
-used in place of transient keyword. Override method writeExternal and readExternal then dont read or write that variable that we want to hide
-
 **System.in:** when we write system.in inside scanner it will tell scanner to read input from keyboard.
 
 ## Java Methods:
