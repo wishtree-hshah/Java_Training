@@ -18,7 +18,7 @@
 - How Does JVM Handle an Exception?
     1. exception occured
     2. created exception object and hands it JVM. (Name, description and current state of program)
-    3. Now JVM finds the block of code than can handle exception (ExceptionHandler).
+    3. Now JVM finds the block of code that can handle exception (ExceptionHandler).
     4. Searches for the code to handle exception and proceeds to the call stack in reverse order.
     5. If it finds apprriate exception handler then it will create object and try to handle it
     6. if the exception handler is not found then it will send to the default exception handler which is part of runtime which prints the exception and terminates the program
@@ -47,8 +47,8 @@
 - Throwable(String msg, Throwable cause) :- Where msg is the exception message and cause is the exception that causes the current exception.
 - Methods Of Throwable class:
 
-    1. getCause() method :-when one exception is caused by another, allowing developers to trace the root cause of the error.
-    2. nitCause(Throwable cause): Can only be called once, calling it again throws an IllegalStateException, must be used before the exception is thrown.
+    1. getCause() method: when one exception is caused by another, allowing developers to trace the root cause of the error.
+    2. initCause(Throwable cause): Can only be called once, calling it again throws an IllegalStateException, must be used before the exception is thrown.
 
 ## Null Pointer Exception:
 - happens when a program attempts to use an object reference that has null value.

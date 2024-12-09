@@ -26,16 +26,6 @@ public class ThreadMethodsExample {
         myThread1.start(); // Starting myThread1
         myThread2.start(); // Starting myThread2
 
-        // Synchronization example
-        synchronized (myThread2) {
-            try {
-                System.out.println("Main thread waiting for " + myThread2.getName());
-                myThread2.wait(500); // Simulates a wait condition (not commonly used like this)
-            } catch (InterruptedException e) {
-                System.out.println("Main thread interrupted during wait.");
-            }
-        }
-
         // Properly handling the completion
         myThread2.join(); // Ensures myThread2 completes before proceeding
         System.out.println("Execution completed.");
