@@ -20,7 +20,9 @@ public class ThreadMethodsExample {
         MyThread myThread1 = new MyThread("Thread-1");
         MyThread myThread2 = new MyThread("Thread-2");
 
-        myThread1.setDaemon(true); // Marking myThread1 as a daemon thread (low-priority)
+        // Marking myThread1 as a daemon thread (low-priority)
+        //JVM terminates automatically when all user threads finish
+        myThread1.setDaemon(true);
         System.out.println("Is " + myThread1.getName() + " a daemon? " + myThread1.isDaemon());
 
         myThread1.start(); // Starting myThread1
