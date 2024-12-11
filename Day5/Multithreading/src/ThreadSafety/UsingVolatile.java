@@ -2,7 +2,7 @@ package ThreadSafety;
 
 public class UsingVolatile {
 
-    static int counter = 0; // Shared volatile variable
+    static volatile int counter = 0; // Shared volatile variable
 
     static void increment() {
         counter++; // Incrementing the counter

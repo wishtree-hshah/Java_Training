@@ -15,7 +15,7 @@ public class ThreadState {
 
         // Monitor the thread states
         try {
-            Thread.sleep(100); // Allow time for thread1 to start execution
+            Thread.sleep(500); // Allow time for thread1 to start execution
             System.out.println(thread1.getName() + " state during sleep(): " + thread1.getState()); // TIMED_WAITING
             thread1.join();
         } catch (InterruptedException e) {
