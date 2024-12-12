@@ -48,3 +48,22 @@
   - Null Pointer Exception
   - Exception Handling with Method Overriding
 - Multithreading basics
+
+## [Day 5: 07/12/2024](https://github.com/wishtree-hshah/Java_Training/tree/main/Day5)
+- Multhreading
+  - Methods
+  - Daemon Thread
+  - Thread Safety
+  - ThreadPool
+
+## [Day 6: 09/12/2024](https://github.com/wishtree-hshah/Java_Training/tree/main/Day6)
+- Synchronization
+- Deadlock
+- Networking and Socket
+
+## [Day 6: 09/12/2024](https://github.com/wishtree-hshah/Java_Training/tree/main/Day7)
+- Networking
+- Classes and Object
+- Constructors and Destructore
+- Inheritance, Encapsulation, Abstraction, Polymorphism
+- Solid Principles
