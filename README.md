@@ -56,12 +56,12 @@
   - Thread Safety
   - ThreadPool
 
-## [Day 6: 09/12/2024](https://github.com/wishtree-hshah/Java_Training/tree/main/Day6)
+## [Day 6: 10/12/2024](https://github.com/wishtree-hshah/Java_Training/tree/main/Day6)
 - Synchronization
 - Deadlock
 - Networking and Socket
 
-## [Day 6: 09/12/2024](https://github.com/wishtree-hshah/Java_Training/tree/main/Day7)
+## [Day 7: 11/12/2024](https://github.com/wishtree-hshah/Java_Training/tree/main/Day7)
 - Networking
 - Classes and Object
 - Constructors and Destructore
