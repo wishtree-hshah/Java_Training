@@ -43,6 +43,6 @@
 
 - when we apply the stage previous stage gets runs automatically
 
-- mcn wrapper:wrapper: files created mvnw, mvnw.cmd
+- mvn wrapper:wrapper: files created mvnw, mvnw.cmd
 - These scripts download and use a specified Maven version, even if Maven isn’t installed on the machine.
 - then we can use mvnw.cmd clean
