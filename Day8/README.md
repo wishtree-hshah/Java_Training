@@ -119,3 +119,20 @@ Browsers use a LinkedHashMap to maintain a cache of recently visited pages
 - some use cases:
     - E-commerence application: A ShoppingCart class could be generic, allowing it to handle various types of products (e.g., Electronics, Clothing, etc.).
     - Social media: A Post class could be designed to manage various post types like images, video
+
+## HashTable:
+- Synchronized
+- Key-Value Pair Storage
+- No null Keys or Values
+
+## Comparator Interface:
+- It provides a way to compare two objects of same class, which can be used for sorting or ordering.
+
+## Comparable Interface:
+- The Comparable interface in Java is used to define a natural ordering of objects. 
+- It provides the compareTo() method that compares the current object with another object of the same type. 
+- The compareTo() method returns:
+
+    1. A negative integer if the current object is less than the compared object.
+    2. Zero if the current object is equal to the compared object.
+    3. A positive integer if the current object is greater than the compared object.
