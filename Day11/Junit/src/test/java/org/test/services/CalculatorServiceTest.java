@@ -1,10 +1,6 @@
 package org.test.services;
 
-import org.junit.AfterClass;
-import org.junit.Assert;
-import org.junit.BeforeClass;
-import org.junit.Test;
-
+import org.junit.*;
 import java.util.Date;
 
 public class CalculatorServiceTest {
@@ -18,14 +14,32 @@ public class CalculatorServiceTest {
     }
 
     /**
-     * Test method of addTwoNumbersTest
+     * Will be executed before each test case
      */
-    @Test
-    public void addTwoNumbersTest(){
+    @Before
+    public void beforeEach(){
+        System.out.println("Before each test case...");
+    }
+
+    /**
+     * Will be executed after each test case
+     */
+    @After
+    public void afterEach(){
+        System.out.println("After each test case...");
+    }
+
+    /**
+     * Test method of addTwoNumbersTest
+     * if this testcase takes more than 2 sec than test fails
+     */
+    @Test(timeout=2000)
+    public void addTwoNumbersTest() throws InterruptedException {
         System.out.println("Test for addTwoNumbersTest...");
         int result = CalculatorService.addTwoNumbers(12,45);
         int expected = 57;
         Assert.assertEquals(expected,result);
+        Thread.sleep(3000);
     }
 
     /**
@@ -40,10 +54,11 @@ public class CalculatorServiceTest {
     }
 
     /**
-     *
+     * Will be executed after all test cases
      */
     @AfterClass
-    public void cleanUp(){
-
+    public static void cleanUp(){
+        System.out.println("After all test cases");
+        System.out.println("End test cases: " + new Date());
     }
 }
