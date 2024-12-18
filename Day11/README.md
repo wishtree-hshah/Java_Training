@@ -10,3 +10,7 @@
 Modern annotations (@Test, @BeforeEach, @AfterEach) Supports parameterized and dynamic tests.
 
 - JUnit Vintage: Backward compatibility for JUnit 4/3 tests. Requires junit-vintage-engine dependency for running legacy tests.
+
+- junit-jupiter-api: Provides the core annotations and APIs for writing JUnit 5 tests
+- junit-jupiter-engine: The runtime engine required to execute JUnit 5 tests.
+- junit-jupiter-params: Enables writing tests that can run with different sets of input values using annotations like @ParameterizedTest, @ValueSource, etc.
