@@ -5,7 +5,7 @@ public class CalculatorService {
         return a+b;
     }
 
-    public static int productTwoNumbers(int a,int b){
+    private static int productTwoNumbers(int a,int b){
         return a*b;
     }
 

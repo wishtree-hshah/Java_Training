@@ -4,6 +4,8 @@ import org.junit.jupiter.api.*;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
 
+import java.lang.reflect.Method;
+
 public class CalculatorServiceTest {
     /**
      * This method will run before any test method starts execution
@@ -47,6 +49,19 @@ public class CalculatorServiceTest {
         int actualResult = CalculatorService.addTwoNumbers(7,8);
         int expectedResult = 15;
         Assertions.assertEquals(expectedResult,actualResult,"Test Failed");
+    }
+
+    @Test
+    public void productTwoNumbersTest(){
+        CalculatorService calculatorService = new CalculatorService();
+        try {
+            Method privateMethod = CalculatorService.class.getDeclaredMethod("productTwoNumbers",int.class,int.class);
+            privateMethod.setAccessible(true);
+            Object result = privateMethod.invoke(calculatorService,3,4);
+            Assertions.assertEquals(12,result);
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
     }
 
     /**
