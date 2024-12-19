@@ -5,6 +5,9 @@ import org.junit.jupiter.api.Test;
 
 import static org.mockito.Mockito.*;
 
+/**
+ * Mocking PaymentService and NotificationService
+ */
 public class OrderServiceTest {
     @Test
     public void placeOrderTest(){

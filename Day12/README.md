@@ -4,6 +4,9 @@
     1. Creates a Fake Object (Mock): 
         - Mockito creates a fake version of the class or interface you want to test. 
         - This fake object looks and behaves like the real object but doesn’t actually run its original code.
+        - Mockito uses the Java Reflection API to create mock objects at runtime.
+        - For interfaces, it uses Java's Proxy class to generate dynamic proxies.
+        - For concrete classes, Mockito uses a bytecode manipulation library, such as Byte Buddy, to subclass the target class and override its methods.
     2. Define Fake Behavior (Stubbing):
         - You tell the fake object what to do when certain methods are called.
     3. Intercepts Method Calls
