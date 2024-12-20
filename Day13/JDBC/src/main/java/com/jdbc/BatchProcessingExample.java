@@ -5,6 +5,9 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
+/**
+ *  batch processing in JDBC to insert multiple records into a database
+ */
 public class BatchProcessingExample {
     public static void main(String[] args) {
         String url = "jdbc:mysql://localhost:3306/employee";
