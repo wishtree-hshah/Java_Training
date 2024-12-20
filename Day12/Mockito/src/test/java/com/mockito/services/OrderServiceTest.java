@@ -27,10 +27,8 @@ public class OrderServiceTest {
         // Step 5: Verify behavior and assert result
         Assertions.assertEquals("Order placed", result);
 
-        // Corrected verification
+        // verification
         verify(mockPaymentService).processPayment("123", 100.0);
-
-        // The actual message is "Order placed successfully!"
         verify(mockNotificationService).sendNotification("123", "Order placed successfully!");
     }
 }
