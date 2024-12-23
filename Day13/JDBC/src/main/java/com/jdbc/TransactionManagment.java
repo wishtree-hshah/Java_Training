@@ -53,10 +53,10 @@ public class TransactionManagment {
                 // Restore auto-commit mode to true after transaction completion
                 if (connection != null) {
                     connection.setAutoCommit(true);
+                    connection.close();
                 }
                 // Close the resources
                 if (statement != null) statement.close();
-                if (connection != null) connection.close();
             } catch (SQLException e) {
                 e.printStackTrace();
             }
