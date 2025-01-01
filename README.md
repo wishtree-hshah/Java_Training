@@ -49,7 +49,7 @@
   - Exception Handling with Method Overriding
 - Multithreading basics
 
-## [Day 5: 07/12/2024](https://github.com/wishtree-hshah/Java_Training/tree/main/Day5)
+## [Day 5: 09/12/2024](https://github.com/wishtree-hshah/Java_Training/tree/main/Day5)
 - Multhreading
   - Methods
   - Daemon Thread
@@ -67,3 +67,63 @@
 - Constructors and Destructore
 - Inheritance, Encapsulation, Abstraction, Polymorphism
 - Solid Principles
+
+## [Day 8: 12/12/2024](https://github.com/wishtree-hshah/Java_Training/tree/main/Day8)
+- Java Collections
+  - List Interface
+  - Set Interface
+  - Queue & PriorityQueue
+  - Map
+- Generics
+
+## [Day 9: 13/12/2024](https://github.com/wishtree-hshah/Java_Training/tree/main/Day9)
+- Maven
+
+## [Day 10: 16/12/2024](https://github.com/wishtree-hshah/Java_Training/tree/main/Day10)
+- File I/O
+- Stream API
+- Lambda Expression
+
+## [Day 11: 17/12/2024](https://github.com/wishtree-hshah/Java_Training/tree/main/Day11)
+- Junit
+- Optional class
+- Task Managment System - CLI (2 hour)
+
+## [Day 12: 18/12/2024](https://github.com/wishtree-hshah/Java_Training/tree/main/Day12)
+- Mockito
+- Task Managment System - CLI (2 hour)
+
+## [Day 13: 19/12/2024](https://github.com/wishtree-hshah/Java_Training/tree/main/Day13)
+- JDBC
+- Transaction Managment
+- Batch Processing
+- Task Managment System - CLI (2 hour)
+
+## [Day 14: 20/12/2024](https://github.com/wishtree-hshah/Java_Training/tree/main/Day14)
+- Database Isolation Levels
+- Task Managment System - CLI (4 hour)
+
+## [Day 15: 23/12/2024](https://github.com/wishtree-hshah/Java_Training/tree/main/Day15)
+- Spring Basics
+- Modification in Task Managment System - CLI (1 hour)
+
+## [Day 16: 24/12/2024](https://github.com/wishtree-hshah/Java_Training/tree/main/Day16)
+- Spring Framework Theory
+- SpringBoot basics
+
+## [Day 17: 26/12/2024](https://github.com/wishtree-hshah/Java_Training/tree/main/Day17)
+- Creating Restful API
+- Exception Handling
+- Task Managment System - API
+
+## [Day 18: 27/12/2024](https://github.com/wishtree-hshah/Java_Training/tree/main/Day18)
+- AOP
+- SpringBoot Annotations
+
+## [Day 19: 30/12/2024](https://github.com/wishtree-ksangani/Email_Track)
+- POC of email tracking for project
+
+## [Day 20: 31/12/2024](https://github.com/wishtree-hshah/Java_Training/tree/main/Day20)
+- POC of email tracking for project changes
+- JPA
+- Respository Pattern
