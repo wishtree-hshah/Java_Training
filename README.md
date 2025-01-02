@@ -124,6 +124,4 @@
 - POC of email tracking for project
 
 ## [Day 20: 31/12/2024](https://github.com/wishtree-hshah/Java_Training/tree/main/Day20)
-- POC of email tracking for project changes
-- JPA
 - Respository Pattern
