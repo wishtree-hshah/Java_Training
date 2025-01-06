@@ -11,9 +11,19 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.provisioning.InMemoryUserDetailsManager;
 import org.springframework.security.web.SecurityFilterChain;
 
+/**
+ * The type Security config.
+ */
 @Configuration
 public class SecurityConfig {
 
+    /**
+     * Security filter chain security filter chain.
+     *
+     * @param http the http
+     * @return the security filter chain
+     * @throws Exception the exception
+     */
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         http.csrf().disable()
@@ -28,6 +38,11 @@ public class SecurityConfig {
         return http.build();
     }
 
+    /**
+     * User details service in memory user details manager.
+     *
+     * @return the in memory user details manager
+     */
     @Bean
     public InMemoryUserDetailsManager userDetailsService() {
         UserDetails admin = User.withUsername("admin")
@@ -43,6 +58,11 @@ public class SecurityConfig {
         return new InMemoryUserDetailsManager(admin,user);
     }
 
+    /**
+     * Password encoder password encoder.
+     *
+     * @return the password encoder
+     */
     @Bean
     public PasswordEncoder passwordEncoder() {
         return new BCryptPasswordEncoder();
