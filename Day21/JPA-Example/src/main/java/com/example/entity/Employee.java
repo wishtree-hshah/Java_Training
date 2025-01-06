@@ -1,10 +1,6 @@
 package com.example.entity;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import lombok.Data;
+import jakarta.persistence.*;
 
 /**
  * The type Employee.
@@ -12,7 +8,9 @@ import lombok.Data;
 @Entity
 public class Employee {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+//    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.TABLE, generator = "employee_table")
+    @TableGenerator(name = "employee_table", table = "id_table", pkColumnName = "entity_name", valueColumnName = "next_id", allocationSize = 2)
     private Long id;
     private String name;
     private String email;
