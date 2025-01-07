@@ -123,5 +123,19 @@
 ## [Day 19: 30/12/2024](https://github.com/wishtree-ksangani/Email_Track)
 - POC of email tracking for project
 
-## [Day 20: 31/12/2024](https://github.com/wishtree-hshah/Java_Training/tree/main/Day20)
-- Respository Pattern
+## [Day 20: 31/12/2024](https://github.com/wishtree-ksangani/Email_Track)
+- POC of email tracking for project
+- Implementation:
+  - Repository
+  - JPA
+  - Integration with database
+
+## [Day 21: 02/01/2025](https://github.com/wishtree-hshah/Java_Training/tree/main/Day21)
+- Repository
+- JPA
+- Integration with database
+- @Query
+
+## [Day 22: 03/01/2025](https://github.com/wishtree-hshah/Java_Training/tree/main/Day22)
+- Lazy vs Eager
+- Basics of Spring Security
