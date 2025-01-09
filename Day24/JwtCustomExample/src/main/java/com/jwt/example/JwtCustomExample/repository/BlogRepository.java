@@ -1,4 +1,4 @@
-package com.jwt.example.JwtCustomExample.filter;
+package com.jwt.example.JwtCustomExample.repository;
 
 import com.jwt.example.JwtCustomExample.entity.Blog;
 import org.springframework.data.jpa.repository.JpaRepository;

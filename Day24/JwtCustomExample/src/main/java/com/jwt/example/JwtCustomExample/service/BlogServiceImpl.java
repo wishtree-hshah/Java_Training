@@ -1,7 +1,7 @@
 package com.jwt.example.JwtCustomExample.service;
 
 import com.jwt.example.JwtCustomExample.entity.Blog;
-import com.jwt.example.JwtCustomExample.filter.BlogRepository;
+import com.jwt.example.JwtCustomExample.repository.BlogRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
