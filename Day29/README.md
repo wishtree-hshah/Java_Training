@@ -17,12 +17,7 @@
 - **Technology**: Services can use different tech stacks suited for their functionality.  
 - **Fault Tolerance**: Failure of one service doesn't affect the entire application, improving reliability.  
 - **Testing**: Services can be tested individually, simplifying unit and integration testing.  
-- **Communication**: Services communicate via APIs (e.g., REST, gRPC), adding flexibility.  
-- **Challenges**:  
-  - **Orchestration**: Managing inter-service communication can be complex.  
-  - **Data Consistency**: Maintaining consistency across distributed databases.  
-  - **Deployment**: Requires advanced CI/CD pipelines.  
-  - **Security**: More endpoints increase potential vulnerabilities.  
+- **Communication**: Services communicate via APIs (e.g., REST, gRPC), adding flexibility.   
 
 ## Microservice Design Patterns
 
