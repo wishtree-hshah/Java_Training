@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register</title>
+</head>
+<body>
+    <h2>Register</h2>
+    <form id="registerForm">
+        <label for="role">Role:</label>
+        <select id="role" name="role">
+            <option value="ROLE_USER">User</option>
+            <option value="ROLE_ADMIN">Admin</option>
+        </select>
+        <button type="button" onclick="register()">Register</button>
+    </form>
+
+    <script>
+        async function register() {
+            const role = document.getElementById("role").value;
+            const response = await fetch('/api/register/oauth2?role=' + role, {
+                method: 'POST',
+                credentials: 'include',
+            });
+            if (response.ok) {
+                const token = await response.text();
+                sessionStorage.setItem("jwt", token); // Store token in session storage
+                alert("Registration successful!");
+                window.location.href = '/Books.html';
+            } else {
+                alert("Registration failed");
+            }
+        }
+    </script>
+</body>
+</html>

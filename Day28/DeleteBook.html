@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Delete Book</title>
+    <script>
+        async function deleteBook() {
+            const token = sessionStorage.getItem("jwt");
+            const bookId = document.getElementById("bookId").value;
+
+            const response = await fetch(`/api/book/${bookId}`, {
+                method: "DELETE",
+                headers: { Authorization: "Bearer " + token },
+            });
+
+            if (response.ok) {
+                alert("Book deleted successfully");
+                window.location.href = "Books.html";
+            } else {
+                alert("Error deleting book");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h2>Delete Book</h2>
+    <label for="bookId">Book ID:</label>
+    <input type="text" id="bookId" placeholder="Enter book ID"><br>
+    <button onclick="deleteBook()">Delete Book</button>
+    <br><br>
+    <button onclick="window.location.href='Books.html'">Back</button>
+</body>
+</html>

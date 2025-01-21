@@ -1,0 +1,101 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>Add Book</title>
+    <script>
+        async function addBook() {
+            const token = sessionStorage.getItem("jwt");
+            const title = document.getElementById("title").value;
+            const author = document.getElementById("author").value;
+            const price = document.getElementById("price").value;
+
+            const response = await fetch("/api/book", {
+                method: "POST",
+                headers: { 
+                    Authorization: "Bearer " + token, 
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({ title, author, price }),
+            });
+
+            if (response.ok) {
+                alert("Book added successfully");
+                window.location.href = "Books.html";
+            } else {
+                alert("Error adding book");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h2>Add Book</h2>
+    <label for="title">Title:</label>
+    <input type="text" id="title" placeholder="Enter book title"><br>
+    <label for="author">Author:</label>
+    <input type="text" id="author" placeholder="Enter author name"><br>
+    <label for="price">Price:</label>
+    <input type="number" id="price" placeholder="Enter price"><br>
+    <button onclick="addBook()">Add Book</button>
+    <br><br>
+    <button onclick="window.location.href='Books.html'">Back</button>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Book</title>
+    <script>
+        async function addBook() {
+            const token = sessionStorage.getItem("jwt");
+            if (!token) {
+                alert("No token found. Please log in.");
+                return;
+            }
+
+            // Decode the JWT to extract the role
+            const decodedToken = JSON.parse(atob(token.split('.')[1]));
+            const role = decodedToken.role;
+
+            // Check if the user has the required role
+            if (role !== "ROLE_ADMIN") {
+                alert("You do not have permission to add books.");
+                return;
+            }
+
+            const title = document.getElementById("title").value;
+            const author = document.getElementById("author").value;
+            const price = document.getElementById("price").value;
+
+            const response = await fetch("/api/book", {
+                method: "POST",
+                headers: { 
+                    Authorization: "Bearer " + token,
+                    Role: role, // Pass the decoded role
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({ title, author, price }),
+            });
+
+            if (response.ok) {
+                alert("Book added successfully");
+                window.location.href = "Books.html";
+            } else {
+                alert("Error adding book");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h2>Add Book</h2>
+    <label for="title">Title:</label>
+    <input type="text" id="title" placeholder="Enter book title"><br>
+    <label for="author">Author:</label>
+    <input type="text" id="author" placeholder="Enter author name"><br>
+    <label for="price">Price:</label>
+    <input type="number" id="price" placeholder="Enter price"><br>
+    <button onclick="addBook()">Add Book</button>
+    <br><br>
+    <button onclick="window.location.href='Books.html'">Back</button>
+</body>
+</html>
