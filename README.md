@@ -139,3 +139,45 @@
 ## [Day 22: 03/01/2025](https://github.com/wishtree-hshah/Java_Training/tree/main/Day22)
 - Lazy vs Eager
 - Basics of Spring Security
+
+## [Day 23: 06/01/2025](https://github.com/wishtree-hshah/Java_Training/tree/main/Day23)
+- Spring Security basic authentication implementation
+
+## [Day 24: 07/01/2025](https://github.com/wishtree-hshah/Java_Training/tree/main/Day24)
+- Spring Security jwt token based authentication
+
+## [Day 25: 08/01/2025](https://github.com/wishtree-hshah/Java_Training/tree/main/Day25)
+- Spring Security Measures
+- Project Work: Linkedln feature exploration
+
+## [Day 26: 09/01/2025](https://github.com/wishtree-hshah/Java_Training/tree/main/Day27)
+- OAuth2 Basics
+- Project Work: Exploring for data scraping
+
+## [Day 27: 10/01/2025](https://github.com/wishtree-hshah/Java_Training/tree/main/Day27)
+- OAuth2 implementation
+- Project Work: Exploring for data scraping
+
+## [Day 28: 13/01/2025](https://github.com/wishtree-hshah/Java_Training/tree/main/Day28)
+- OAuth2 with jWT
+
+## [Day 29: 16/01/2025]
+- POC: Linkedln Scrapping
+
+## [Day 30: 17/01/2025]
+- POC: Linkedln Scrapping
+
+## [Day 31: 20/01/2025](https://github.com/wishtree-hshah/Java_Training/tree/main/Day29)
+- Microservices
+
+## [Day 32: 21/01/2025](https://github.com/wishtree-hshah/Java_Training/tree/main/Day30)
+- Craetional Design Pattern 
+- Implementation
+
+## [Day 33: 22/01/2025](https://github.com/wishtree-hshah/Java_Training/tree/main/Day31)
+- Behavioral Design Pattern
+- Structural Design Pattern
+- Design Principles
+
+## [Day 34: 23/01/2025]
+- POC: Linkedln Scrapping
